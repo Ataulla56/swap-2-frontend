@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const BACKEND_API = "https://swap2-git-main-dscds-projects.vercel.app/api/swap";
+// ✅ Load from .env file
+const BACKEND_API = import.meta.env.VITE_BACKEND_URL;
 
 function Swap() {
   const [fromToken, setFromToken] = useState('');
