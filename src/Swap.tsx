@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-// ✅ Load from .env file
+console.log("🔄 Swap component loaded");
+
 const BACKEND_API = import.meta.env.VITE_BACKEND_URL;
+console.log("🔥 BACKEND_API URL:", BACKEND_API);
 
 function Swap() {
   const [fromToken, setFromToken] = useState('');
